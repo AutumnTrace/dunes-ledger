@@ -1,0 +1,59 @@
+{
+	"format": "dunes-ledger.session",
+	"version": 1,
+	"exportedAt": "2026-11-27T19:20:00.000Z",
+	"session": {
+		"id": "edge-cases",
+		"league": "Sample league",
+		"strategy": "Edge cases",
+		"currency": "chaos",
+		"createdAt": "2026-11-27T19:00:00.000Z",
+		"synthetic": true,
+		"note": "Synthetic test fixture: one unknown price, one explicit zero price, one run with no recorded time.",
+		"priceSnapshot": {
+			"takenAt": "2026-11-27T19:00:00.000Z",
+			"prices": {
+				"Chaos Orb": 1,
+				"Portal Scroll": 0
+			}
+		},
+		"runs": [
+			{
+				"id": "edge-run-1",
+				"finishedAt": "2026-11-27T19:05:00.000Z",
+				"elapsedSeconds": 300,
+				"mapCost": 5,
+				"loot": [
+					{
+						"item": "Chaos Orb",
+						"count": 10,
+						"unitValue": 1
+					},
+					{
+						"item": "Unidentified jewel",
+						"count": 2,
+						"unitValue": null
+					},
+					{
+						"item": "Portal Scroll",
+						"count": 20,
+						"unitValue": 0
+					}
+				]
+			},
+			{
+				"id": "edge-run-2",
+				"finishedAt": "2026-11-27T19:06:00.000Z",
+				"elapsedSeconds": 0,
+				"mapCost": 0,
+				"loot": [
+					{
+						"item": "Chaos Orb",
+						"count": 1,
+						"unitValue": 1
+					}
+				]
+			}
+		]
+	}
+}

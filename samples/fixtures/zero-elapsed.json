@@ -1,0 +1,36 @@
+{
+	"format": "dunes-ledger.session",
+	"version": 1,
+	"exportedAt": "2026-11-27T19:20:00.000Z",
+	"session": {
+		"id": "zero-time",
+		"league": "Sample league",
+		"strategy": "No time recorded",
+		"currency": "chaos",
+		"createdAt": "2026-11-27T19:00:00.000Z",
+		"synthetic": true,
+		"note": "Synthetic test fixture: runs entered without elapsed time.",
+		"priceSnapshot": {
+			"takenAt": "2026-11-27T19:00:00.000Z",
+			"prices": {
+				"Chaos Orb": 1,
+				"Portal Scroll": 0
+			}
+		},
+		"runs": [
+			{
+				"id": "edge-run-2",
+				"finishedAt": "2026-11-27T19:06:00.000Z",
+				"elapsedSeconds": 0,
+				"mapCost": 0,
+				"loot": [
+					{
+						"item": "Chaos Orb",
+						"count": 1,
+						"unitValue": 1
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,102 @@
+{
+	"format": "dunes-ledger.session",
+	"version": 1,
+	"exportedAt": "2026-11-27T18:51:00.000Z",
+	"session": {
+		"id": "sample-dunes-session",
+		"league": "Sample league",
+		"strategy": "Dunes, alch and go",
+		"currency": "chaos",
+		"createdAt": "2026-11-27T18:00:00.000Z",
+		"synthetic": true,
+		"note": "Synthetic sample. The runs, loot and prices are invented round numbers chosen so the arithmetic is easy to check by hand. They are not observed drop rates or market prices.",
+		"priceSnapshot": {
+			"takenAt": "2026-11-27T17:58:00.000Z",
+			"prices": {
+				"Chaos Orb": 1,
+				"Divine Orb": 100,
+				"Orb of Alchemy": 0.5,
+				"Orb of Fusing": 0.25
+			}
+		},
+		"runs": [
+			{
+				"id": "sample-run-01",
+				"finishedAt": "2026-11-27T18:05:00.000Z",
+				"elapsedSeconds": 300,
+				"mapCost": 5,
+				"loot": [
+					{
+						"item": "Chaos Orb",
+						"count": 4,
+						"unitValue": 1
+					},
+					{
+						"item": "Orb of Alchemy",
+						"count": 6,
+						"unitValue": 0.5
+					}
+				]
+			},
+			{
+				"id": "sample-run-02",
+				"finishedAt": "2026-11-27T18:10:00.000Z",
+				"elapsedSeconds": 300,
+				"mapCost": 5,
+				"loot": [
+					{
+						"item": "Chaos Orb",
+						"count": 5,
+						"unitValue": 1
+					},
+					{
+						"item": "Orb of Alchemy",
+						"count": 4,
+						"unitValue": 0.5
+					}
+				]
+			},
+			{
+				"id": "sample-run-03",
+				"finishedAt": "2026-11-27T18:15:00.000Z",
+				"elapsedSeconds": 300,
+				"mapCost": 5,
+				"loot": [
+					{
+						"item": "Chaos Orb",
+						"count": 3,
+						"unitValue": 1
+					},
+					{
+						"item": "Orb of Alchemy",
+						"count": 4,
+						"unitValue": 0.5
+					},
+					{
+						"item": "Orb of Fusing",
+						"count": 8,
+						"unitValue": 0.25
+					}
+				]
+			},
+			{
+				"id": "sample-run-04",
+				"finishedAt": "2026-11-27T18:20:00.000Z",
+				"elapsedSeconds": 300,
+				"mapCost": 5,
+				"loot": [
+					{
+						"item": "Chaos Orb",
+						"count": 4,
+						"unitValue": 1
+					},
+					{
+						"item": "Orb of Alchemy",
+						"count": 6,
+						"unitValue": 0.5
+					}
+				]
+			},
+			{
+				"id": "sample-run-05",
+				"finishedAt": "2026-11-27T18:25:0
