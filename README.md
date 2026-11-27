@@ -131,6 +131,21 @@ To build for a sub-path yourself: `BASE_PATH=/dunes-ledger npm run build`. Git B
 
 Exact dependency versions are pinned in `package.json` and `package-lock.json`. CI runs the same commands on `ubuntu-latest` with Node 24.
 
+Results from a fresh `git clone` of commit `e468926` into an empty temporary folder, on 2026-11-27, with the Playwright Chromium build already installed:
+
+| Command | Result |
+| --- | --- |
+| `npm ci` | installed from the lockfile |
+| `npm run check` | 0 errors, 0 warnings |
+| `npm test` | 61 tests in 4 files passed |
+| `npm run test:e2e` | build, then 12 Playwright tests passed (5.8 s in total) |
+| `npm run release` | three assets and `SHA256SUMS.txt`; the checksums matched a release built from the same commit in another checkout |
+| `npm run release:smoke` | 18 checks passed |
+| `npm run demo`, then the steps under "Try the example" | 120 chaos, 2 chaos, 144 chaos/hour, 50 min; the drill-down named Divine Orb ×1 |
+| site ZIP unzipped and served with `python -m http.server` (Python 3.14.9) | the sample loaded; with the browser offline, a reload still showed it |
+
+Not verified here: the GitHub Actions workflows (they have not run yet), Linux and macOS, Firefox and Safari, and the browser's install prompt itself. The tests check the manifest, its icons and the service worker, which are what the install prompt depends on.
+
 ## Data and artwork
 
 - `samples/synthetic-dunes-session.json` and `samples/fixtures/*.json` were written for this project. Every run, loot line and price in them is invented; the session carries `"synthetic": true` and a note saying so, and the app labels it on screen.
