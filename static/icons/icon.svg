@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<!-- dunes-ledger icon: a dusk sky, a low sun and two dunes. Original artwork, MIT licensed with the code. -->
+	<rect width="512" height="512" rx="104" fill="#22303c"/>
+	<circle cx="342" cy="188" r="64" fill="#f0c26a"/>
+	<path d="M0 318c96-58 196-62 292-14s162 54 220 20v188H0z" fill="#d8a05c"/>
+	<path d="M0 392c112-52 220-46 318 6s148 46 194 22v92H0z" fill="#b5733a"/>
+	<path d="M96 458h320" stroke="#22303c" stroke-width="12" stroke-linecap="round" opacity=".45"/>
+</svg>

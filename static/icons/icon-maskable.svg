@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<!-- Full-bleed variant for maskable launcher icons: artwork kept inside the central 80% safe zone. -->
+	<rect width="512" height="512" fill="#22303c"/>
+	<circle cx="318" cy="206" r="52" fill="#f0c26a"/>
+	<path d="M0 316c90-46 184-50 274-12s156 44 238 14v194H0z" fill="#d8a05c"/>
+	<path d="M0 374c104-42 206-38 298 4s140 38 214 18v116H0z" fill="#b5733a"/>
+</svg>

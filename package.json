@@ -17,9 +17,13 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
+		"serve": "node scripts/serve.mjs build --port 4173",
+		"demo": "vite build && node scripts/serve.mjs build --port 4173",
 		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"test": "vitest run"
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p src/service-worker/tsconfig.json",
+		"test": "vitest run",
+		"test:e2e": "vite build && playwright test",
+		"icons": "node scripts/make-icons.mjs"
 	},
 	"dependencies": {
 		"idb": "8.0.4"
